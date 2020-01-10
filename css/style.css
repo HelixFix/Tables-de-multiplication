@@ -28,7 +28,11 @@ aside {
     position: relative;
 }
 
-#table {
+.cahier {
+    position: relative;
+}
+
+.tablo  {
     /* background-image: url(images.pageCahier.png);*/
 
     display: flex;
@@ -41,43 +45,44 @@ aside {
     font-size: 3em;
 }
 
-#table+#table {
+
+.tablo +.tablo  {
     padding-top: 40px;
 }
 
-#table+#table+#table {
+.tablo +.tablo +.tablo  {
     padding-top: 80px;
 }
 
-#table+#table+#table+#table {
+.tablo +.tablo +.tablo +.tablo  {
     padding-top: 120px;
 }
 
-#table+#table+#table+#table+#table {
+.tablo +.tablo +.tablo +.tablo +.tablo  {
     padding-top: 160px;
 }
 
-#table+#table+#table+#table+#table+#table {
+.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
     padding-top: 200px;
 }
 
-#table+#table+#table+#table+#table+#table+#table {
+.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
     padding-top: 240px;
 }
 
-#table+#table+#table+#table+#table+#table+#table+#table {
+.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
     padding-top: 280px;
 }
 
-#table+#table+#table+#table+#table+#table+#table+#table+#table {
+.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
     padding-top: 320px;
 }
 
-#table+#table+#table+#table+#table+#table+#table+#table+#table+#table {
+.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
     padding-top: 360px;
 }
 
-/*#table:nth-child(n+){
+/*.tablo :nth-child(n+){
     padding-top: 40px;
 }*/
 #math {
