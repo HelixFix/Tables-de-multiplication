@@ -19,8 +19,9 @@ include("header.php");
             include("aside.php");
             ?>
         </aside>
+        <section> liste choix unique</section>
     </main>
-    liste choix unique
+   
 </body>
 <?php
 include("footer.php");

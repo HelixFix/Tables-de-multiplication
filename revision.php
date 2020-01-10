@@ -19,8 +19,12 @@ include("header.php");
             include("aside.php");
             ?>
         </aside>
+        <section>créer des checkbox pour la selection des tables par choix multiples avec stream_bucket_make_writeable</section>
     </main>
-    créer des checkbox pour la selection des tables par choix multiples
+    
+
+
+    
 </body>
 <?php
 include("footer.php");

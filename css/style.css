@@ -10,7 +10,10 @@
     background-color: white;
     text-align: center;
 }
-
+section {
+    left: 500px;
+    position: absolute;
+}
 aside {
     float: left;
     background-color: green;
@@ -50,7 +53,7 @@ ul {
 
 }
 
-header {}
+
 
 h1 {
     text-align: center;

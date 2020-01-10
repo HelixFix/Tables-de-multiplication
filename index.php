@@ -21,6 +21,7 @@ include("header.php");
             include("aside.php");
             ?>
         </aside>
+        <section>
         <div id="twoBox">
             <div id="boxGauche" class="box">
                 <h2>Réviser vos tables de multiplication</h2>
@@ -35,7 +36,7 @@ include("header.php");
                 <a href="test.php"><img src="images/mathTest.png" alt="math test"></a>
             </div>
         </div>
-
+        </section>
     </main>
 </body>
 
