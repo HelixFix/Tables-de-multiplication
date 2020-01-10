@@ -28,11 +28,7 @@ aside {
     position: relative;
 }
 
-.cahier {
-    position: relative;
-}
-
-.tablo  {
+.table {
     /* background-image: url(images.pageCahier.png);*/
 
     display: flex;
@@ -41,48 +37,47 @@ aside {
     position: absolute;
     width: 100px;
     top: 50;
-    left: 50;
+    
     font-size: 3em;
 }
 
-
-.tablo +.tablo  {
+.table+.table {
     padding-top: 40px;
 }
 
-.tablo +.tablo +.tablo  {
+.table+.table+.table {
     padding-top: 80px;
 }
 
-.tablo +.tablo +.tablo +.tablo  {
+.table+.table+.table+.table {
     padding-top: 120px;
 }
 
-.tablo +.tablo +.tablo +.tablo +.tablo  {
+.table+.table+.table+.table+.table {
     padding-top: 160px;
 }
 
-.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
+.table+.table+.table+.table+.table+.table {
     padding-top: 200px;
 }
 
-.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
+.table+.table+.table+.table+.table+.table+.table {
     padding-top: 240px;
 }
 
-.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
+.table+.table+.table+.table+.table+.table+.table+.table {
     padding-top: 280px;
 }
 
-.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
+.table+.table+.table+.table+.table+.table+.table+.table+.table {
     padding-top: 320px;
 }
 
-.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo +.tablo  {
+.table+.table+.table+.table+.table+.table+.table+.table+.table+.table {
     padding-top: 360px;
 }
 
-/*.tablo :nth-child(n+){
+/*.table:nth-child(n+){
     padding-top: 40px;
 }*/
 #math {

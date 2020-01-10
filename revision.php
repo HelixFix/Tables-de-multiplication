@@ -32,112 +32,23 @@ include("header.php");
                 <button type="submit">Envoyer</button>
             </form>
             <div id="math">
-                <div id="multiple1">
-                    <?php
-                    if ($_GET["1"] === 'on') {
+                <?php
+                if ($_GET["6"] === 'on') {
+                    echo '<img class="cahier" src="images/pageCahier.png" alt="">';
+                    for ($l = 0; $l < 10; $l++) {
+                        
+                            echo '<div class="table">' . $n = $l . 'x' . 6 . '=' . $n = $l * 6 . '<br></div>';
+                        }
+                    }if ($_GET["5"] === 'on') {
                         echo '<img class="cahier" src="images/pageCahier.png" alt="">';
                         for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div class="tablo>' . $n = $l . 'x' . 1 . '=' . $n = $l * 1 . '<br></div>';
+                            
+                                echo '<div class="table">' . $n = $l . 'x' . 5 . '=' . $n = $l * 5 . '<br></div>';
+                            }
                         }
-                    }
-                    ?>
-                </div>
-                <div id="multiple2">
-                    <?php
-                    if ($_GET["2"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 2 . '=' . $n = $l * 2 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-                <div id="multiple3">
-                    <?php
-                    if ($_GET["3"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 3 . '=' . $n = $l * 3 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-                <div id="multiple4">
-                    <?php
-                    if ($_GET["4"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 4 . '=' . $n = $l * 4 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-                <div id="multiple5">
-                    <?php
-                    if ($_GET["5"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 5 . '=' . $n = $l * 5 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-                <div id="multiple6">
-                    <?php
-                    if ($_GET["6"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 6 . '=' . $n = $l * 6 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-                <div id="multiple7">
-                    <?php
-                    if ($_GET["7"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 7 . '=' . $n = $l * 7 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-                <div id="multiple8">
-                    <?php
-                    if ($_GET["8"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 8 . '=' . $n = $l * 8 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-                <div id="multiple9">
-                    <?php
-                    if ($_GET["9"] === 'on') {
-                        echo '<img class="cahier" src="images/pageCahier.png" alt="">';
-                        for ($l = 0; $l < 10; $l++) {
-
-                            echo '<div classe="tablo>' . $n = $l . 'x' . 9 . '=' . $n = $l * 9 . '<br></div>';
-                        }
-                    }
-                    ?>
-                </div>
-
-
-
-
-
-
+                ?>
             </div>
+
 
         </section>
     </main>
