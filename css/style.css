@@ -2,3 +2,26 @@
     box-sizing: border-box;
 
 }
+
+#twoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+}
+
+header {
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
