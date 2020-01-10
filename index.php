@@ -17,7 +17,9 @@ include("header.php");
 
     <main>
         <aside>
-
+            <?php
+            include("aside.php");
+            ?>
         </aside>
         <div id="twoBox">
             <div id="boxGauche" class="box">

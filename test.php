@@ -8,9 +8,22 @@
     <title>Tester vos aptitudes</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<?php
+include("header.php");
+?>
 
 <body>
+    <main>
+        <aside>
+            <?php
+            include("aside.php");
+            ?>
+        </aside>
+    </main>
     liste choix unique
 </body>
+<?php
+include("footer.php");
+?>
 
 </html>

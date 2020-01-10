@@ -14,14 +14,20 @@
     height: 500px;
 }
 
-header {
-    
-}
+header {}
 
 h1 {
     text-align: center;
 }
 
+
+
 footer {
     text-align: center;
+    background: #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+margin: 0;
+   
 }

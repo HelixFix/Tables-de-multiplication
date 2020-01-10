@@ -1,7 +1,7 @@
 <nav>
     <ul>
-        <li>Accueil</li>
-        <li>Révision</li>
-        <li>Test</li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="revision.php">Révision</a></li>
+        <li><a href="Test.php">test</a></li>
     </ul>
 </nav>

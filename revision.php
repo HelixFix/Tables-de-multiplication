@@ -8,9 +8,22 @@
     <title>Réviser vos tables de multiplication</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<?php
+include("header.php");
+?>
 
 <body>
+    <main>
+        <aside>
+            <?php
+            include("aside.php");
+            ?>
+        </aside>
+    </main>
     créer des checkbox pour la selection des tables par choix multiples
 </body>
+<?php
+include("footer.php");
+?>
 
 </html>
