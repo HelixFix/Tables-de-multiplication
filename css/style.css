@@ -21,6 +21,18 @@ aside {
     height: 500px;
 
 }
+#cahier {
+    position: relative;
+}
+
+#table {
+    position: absolute;
+    display: block;
+    top: 50;
+    left: 50;
+    font-size: 3em;
+}
+
 
 a {
     text-decoration: none;

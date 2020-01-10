@@ -23,6 +23,11 @@ multiplication();*/
     }
 }*/
 
+
+foreach ($c=3) {
+    
+}
+
 {
     
     for ($l = 0; $l < 10; $l++) {
