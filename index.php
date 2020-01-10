@@ -24,7 +24,7 @@ include("header.php");
         <div id="twoBox">
             <div id="boxGauche" class="box">
                 <h2>Réviser vos tables de multiplication</h2>
-                <a href="revision.html"><img src="images/images.jpg" alt="feuille table de multiplication"></a>
+                <a href="revision.php"><img src="images/images.jpg" alt="feuille table de multiplication"></a>
                 <p>La page 1 te permet de te familiariser avec les tables,<br> donc regarde, lis à haute voix et répète.
                     <br>Si tu crois que tu peux t'en souvenir, <br>il est temps de tester tes connaissances à la page 2.
                 </p>
@@ -32,7 +32,7 @@ include("header.php");
 
             <div id="boxDroite" class="box">
                 <h2>Tester vos aptitudes</h2>
-                <a href="test.html"><img src="images/mathTest.png" alt="math test"></a>
+                <a href="test.php"><img src="images/mathTest.png" alt="math test"></a>
             </div>
         </div>
 

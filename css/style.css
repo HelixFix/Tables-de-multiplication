@@ -7,21 +7,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    text-align: center;
 }
 
 aside {
     float: left;
+    background-color: green;
+    width: 250px;
+    height: 500px;
+
+}
+
+a {
+    text-decoration: none;
+    /* Les liens ne seront plus soulignés */
+}
+
+a:hover
+
+/* Quand le visiteur pointe sur le lien */
+    {
+    text-decoration: none;
+    /* Le lien deviendra souligné quand on pointera dessus */
+    color: #ef9303;
+    /* Le lien sera écrit en vert quand on pointera dessus */
+}
+
+li {
+    font-size: 2em;
+}
+
+ul {
+
+    list-style: none;
+    text-transform: uppercase;
 }
 
 .box {
     width: 500px;
     height: 500px;
+
 }
 
 header {}
 
 h1 {
     text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -31,6 +64,10 @@ footer {
     background: #ccc;
     position: absolute;
     bottom: 0;
-    left: 0; 
+    left: 0;
     right: 0
+}
+
+body {
+    background-color: grey;
 }
