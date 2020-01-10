@@ -24,9 +24,9 @@ multiplication();*/
 }*/
 
 
-foreach ($c=3) {
+/*foreach ($c=3) {
     
-}
+}*/
 
 {
     

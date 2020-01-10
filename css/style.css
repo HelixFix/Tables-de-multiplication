@@ -10,10 +10,12 @@
     background-color: white;
     text-align: center;
 }
+
 section {
     left: 500px;
     position: absolute;
 }
+
 aside {
     float: left;
     background-color: green;
@@ -21,16 +23,65 @@ aside {
     height: 500px;
 
 }
+
 #cahier {
     position: relative;
 }
 
 #table {
+    /* background-image: url(images.pageCahier.png);*/
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     position: absolute;
-    display: block;
+    width: 100px;
     top: 50;
     left: 50;
     font-size: 3em;
+}
+
+#table+#table {
+    padding-top: 40px;
+}
+
+#table+#table+#table {
+    padding-top: 80px;
+}
+
+#table+#table+#table+#table {
+    padding-top: 120px;
+}
+
+#table+#table+#table+#table+#table {
+    padding-top: 160px;
+}
+
+#table+#table+#table+#table+#table+#table {
+    padding-top: 200px;
+}
+
+#table+#table+#table+#table+#table+#table+#table {
+    padding-top: 240px;
+}
+
+#table+#table+#table+#table+#table+#table+#table+#table {
+    padding-top: 280px;
+}
+
+#table+#table+#table+#table+#table+#table+#table+#table+#table {
+    padding-top: 320px;
+}
+
+#table+#table+#table+#table+#table+#table+#table+#table+#table+#table {
+    padding-top: 360px;
+}
+
+/*#table:nth-child(n+){
+    padding-top: 40px;
+}*/
+#math {
+    position: relative;
 }
 
 
@@ -85,4 +136,5 @@ footer {
 
 body {
     background-color: grey;
+    height: 100vh;
 }
