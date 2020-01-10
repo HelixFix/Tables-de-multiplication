@@ -28,6 +28,15 @@ multiplication();*/
     
 }*/
 
+
+$multiple = "3.14";
+$int = (int)$num;
+$float = (float)$num;
+
+
+$_GET["6"]
+
+
 {
     
     for ($l = 0; $l < 10; $l++) {
