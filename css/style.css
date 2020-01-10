@@ -9,6 +9,10 @@
     justify-content: center;
 }
 
+aside {
+    float: left;
+}
+
 .box {
     width: 500px;
     height: 500px;
@@ -27,7 +31,6 @@ footer {
     background: #ccc;
     position: absolute;
     bottom: 0;
-    width: 100%;
-margin: 0;
-   
+    left: 0; 
+    right: 0
 }
