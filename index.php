@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tables de multiplication</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
 <?php
 include("header.php");
 ?>
@@ -22,20 +11,20 @@ include("header.php");
             ?>
         </aside>
         <section>
-        <div id="twoBox">
-            <div id="boxGauche" class="box">
-                <h2>Réviser vos tables de multiplication</h2>
-                <a href="revision.php"><img src="images/images.jpg" alt="feuille table de multiplication"></a>
-                <p>La page 1 te permet de te familiariser avec les tables,<br> donc regarde, lis à haute voix et répète.
-                    <br>Si tu crois que tu peux t'en souvenir, <br>il est temps de tester tes connaissances à la page 2.
-                </p>
-            </div>
+            <div id="twoBox">
+                <div id="boxGauche" class="box">
+                    <h2>Réviser vos tables de multiplication</h2>
+                    <a href="revision.php"><img src="images/images.jpg" alt="feuille table de multiplication"></a>
+                    <p>La page 1 te permet de te familiariser avec les tables,<br> donc regarde, lis à haute voix et répète.
+                        <br>Si tu crois que tu peux t'en souvenir, <br>il est temps de tester tes connaissances à la page 2.
+                    </p>
+                </div>
 
-            <div id="boxDroite" class="box">
-                <h2>Tester vos aptitudes</h2>
-                <a href="test.php"><img src="images/mathTest.png" alt="math test"></a>
+                <div id="boxDroite" class="box">
+                    <h2>Tester vos aptitudes</h2>
+                    <a href="test.php"><img src="images/mathTest.png" alt="math test"></a>
+                </div>
             </div>
-        </div>
         </section>
     </main>
 </body>
