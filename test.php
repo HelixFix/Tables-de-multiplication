@@ -28,17 +28,19 @@ include("header.php");
   </datalist>
   <input type="submit">
 </form>
-<div>
+
+<div id="math">
 <?php
-                if (isset($_GET["tableau"]) == 'table+de+1') {
-                    echo '<div class="table">';
+                if (isset($_GET["tableau"]) == 'Table'+'de'+'1') {
+                    echo '<div class="table2">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo  $n = $l . 'x' . 1 . '=' . '<p>Réponse <input type="number" name="somme"> <input type="submit" value="Envoyer"></p>' . '<br>';
+                        echo  $n = $l . 'x' . 1 . '=' . ' <input type="number" name="somme"> <input type="submit" value="Envoyer">' . '<br><br>';
                     }
                     echo '</div>';
                 }
                
                 ?>
+
 </div>
 
         <form action="../../form-result.php" method="get">

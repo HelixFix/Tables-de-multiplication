@@ -46,6 +46,21 @@ aside {
 
 }
 
+.table2 {
+    /* background-image: url(images.pageCahier.png);*/
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    background-color: #ccc;
+    width: 150px;
+    font-size: 3em;
+    flex-direction: column;
+    position: relative;
+
+}
+
 
 
 /*.table:nth-child(n+){
