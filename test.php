@@ -9,7 +9,46 @@ include("header.php");
             include("aside.php");
             ?>
         </aside>
-        <section> liste choix unique radio</section>
+        <section> liste choix unique radio
+
+        
+
+    <form action="test.php" method="get">
+  <input list="tableau" name="tableau">
+  <datalist id="tableau">
+    <option value="Table de 1">
+    <option value="Table de 2">
+    <option value="Table de 3">
+    <option value="Table de 4">
+    <option value="Table de 5">
+    <option value="Table de 6">
+    <option value="Table de 7">
+    <option value="Table de 8">
+    <option value="Table de 9">
+  </datalist>
+  <input type="submit">
+</form>
+<div>
+<?php
+                if (isset($_GET["tableau"]) == 'table+de+1') {
+                    echo '<div class="table">';
+                    for ($l = 0; $l < 10; $l++) {
+                        echo  $n = $l . 'x' . 1 . '=' . '<p>Réponse <input type="number" name="somme"> <input type="submit" value="Envoyer"></p>' . '<br>';
+                    }
+                    echo '</div>';
+                }
+               
+                ?>
+</div>
+
+        <form action="../../form-result.php" method="get">
+        
+  <p>Réponse <input type="number" name="somme"> <input type="submit" value="Envoyer"></p>
+</form>
+
+
+<!--<option value="42">La réponse</option>--> 
+        </section>
     </main>
    
 </body>
