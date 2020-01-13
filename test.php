@@ -34,13 +34,27 @@ include("header.php");
                 if (isset($_GET["tableau"]) == 'Table'+'de'+'1') {
                     echo '<div class="table2">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo  $n = $l . 'x' . 1 . '=' . ' <input type="number" name="somme"> <input type="submit" value="Envoyer">' . '<br><br>';
+                        echo  $n = $l . ' x ' . 1 . ' = ' . ' <input type="number" name="somme"> <input type="submit" value="Envoyer">' . '<br><br>';
                     }
                     echo '</div>';
                 }
                
                 ?>
+<!--utiliser un foreach avec action pour passer au suivant-->
+<?php
 
+$tableDe1 = ['0 X 1','0 X 2','0 X 3','0 X 4','0 X 5','0 X 6','0 X 7','0 X 8','0 X 9',];
+
+
+foreach($tableDe1 as $element)
+
+{
+
+   echo $element . ' =' . '<br />';
+
+}
+
+?>
 </div>
 
         <form action="../../form-result.php" method="get">

@@ -37,12 +37,14 @@ aside {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-    margin-right: 50px;
+  
     background-color: #ccc;
-    width: 150px;
+    width: 200px;
     font-size: 3em;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
+    column-width: 100px;
+    
 
 }
 
@@ -54,7 +56,7 @@ aside {
     margin-bottom: 50px;
     margin-right: 50px;
     background-color: #ccc;
-    width: 150px;
+    width: 200px;
     font-size: 3em;
     flex-direction: column;
     position: relative;
@@ -68,10 +70,11 @@ aside {
 }*/
 #math {
     
-    display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 800px;
+    width: 1000px;
+    column-count: 3;
+    
 }
 
 

@@ -46,7 +46,7 @@ include("header.php");
                 if (isset($_GET["1"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo  $n = $l . 'x' . 1 . '=' . $n = $l * 1 . '<br>';
+                        echo  $n = $l . ' x ' . 1 . ' = ' . $n = $l * 1 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -58,7 +58,7 @@ include("header.php");
                 if (isset($_GET["2"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 2 . '=' . $n = $l * 2 . '<br>';
+                        echo $n = $l . ' x ' . 2 . ' = ' . $n = $l * 2 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -69,7 +69,7 @@ include("header.php");
                 if (isset($_GET["3"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 3 . '=' . $n = $l * 3 . '<br>';
+                        echo $n = $l . ' x ' . 3 . ' = ' . $n = $l * 3 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -80,7 +80,7 @@ include("header.php");
                 if (isset($_GET["4"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 4 . '=' . $n = $l * 4 . '<br>';
+                        echo $n = $l . ' x ' . 4 . ' = ' . $n = $l * 4 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -91,7 +91,7 @@ include("header.php");
                 if (isset($_GET["5"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 5 . '=' . $n = $l * 5 . '<br>';
+                        echo $n = $l . ' x ' . 5 . ' = ' . $n = $l * 5 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -102,7 +102,7 @@ include("header.php");
                 if (isset($_GET["6"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 6 . '=' . $n = $l * 6 . '<br>';
+                        echo $n = $l . ' x ' . 6 . ' = ' . $n = $l * 6 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -113,7 +113,7 @@ include("header.php");
                 if (isset($_GET["7"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 7 . '=' . $n = $l * 7 . '<br>';
+                        echo $n = $l . ' x ' . 7 . ' = ' . $n = $l * 7 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -124,7 +124,7 @@ include("header.php");
                 if (isset($_GET["8"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 8 . '=' . $n = $l * 8 . '<br>';
+                        echo $n = $l . ' x ' . 8 . ' = ' . $n = $l * 8 . '<br>';
                     }
                     echo '</div>';
                 }
@@ -135,7 +135,7 @@ include("header.php");
                 if (isset($_GET["9"]) == 'on') {
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo $n = $l . 'x' . 9 . '=' . $n = $l * 9 . '<br>';
+                        echo $n = $l . ' x ' . 9 . ' = ' . $n = $l * 9 . '<br>';
                     }
                     echo '</div>';
                 }
