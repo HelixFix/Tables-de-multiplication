@@ -29,99 +29,118 @@ include("header.php");
 
                 <input type="checkbox" name="6">
                 <label for="6">Table de 6</label>
+                
+                <input type="checkbox" name="7">
+                <label for="7">Table de 7</label>
+                
+                <input type="checkbox" name="8">
+                <label for="8">Table de 8</label>
+                              
+                <input type="checkbox" name="9">
+                <label for="9">Table de 9</label>
                 <button type="submit">Envoyer</button>
             </form>
             <div id="math">
-                <div id="table1" class="table">
+                
                 <?php
-                if ($_GET["1"] === 'on') {
-                    
+                if (isset($_GET["1"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
                         echo  $n = $l . 'x' . 1 . '=' . $n = $l * 1 . '<br>';
                     }
+                    echo '</div>';
                 }
+               
                 ?>
-                </div>
-                <div id="table2" class="table">
+                
+                
                 <?php
-                if ($_GET["2"] === 'on') {
-                    
+                if (isset($_GET["2"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
                         echo $n = $l . 'x' . 2 . '=' . $n = $l * 2 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
-                <div id="table3" class="table">
+                
+                
                 <?php
-                if ($_GET["3"] === 'on') {
-                    
+                if (isset($_GET["3"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo '<div class="table">' . $n = $l . 'x' . 3 . '=' . $n = $l * 3 . '<br></div>';
+                        echo $n = $l . 'x' . 3 . '=' . $n = $l * 3 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
-                <div id="table4" class="table">
+                
+                
                 <?php
-                if ($_GET["4"] === 'on') {
-                    
+                if (isset($_GET["4"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo '<div class="table">' . $n = $l . 'x' . 4 . '=' . $n = $l * 4 . '<br></div>';
+                        echo $n = $l . 'x' . 4 . '=' . $n = $l * 4 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
-                <div id="table5" class="table">
+                
+                
                 <?php
-                if ($_GET["5"] === 'on') {
-                    
+                if (isset($_GET["5"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo '<div class="table">' . $n = $l . 'x' . 5 . '=' . $n = $l * 5 . '<br></div>';
+                        echo $n = $l . 'x' . 5 . '=' . $n = $l * 5 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
-                <div id="table6" class="table">
+               
+                
                 <?php
-                if ($_GET["6"] === 'on') {
-                    
+                if (isset($_GET["6"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo '<div class="table">' . $n = $l . 'x' . 6 . '=' . $n = $l * 6 . '<br></div>';
+                        echo $n = $l . 'x' . 6 . '=' . $n = $l * 6 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
-                <div id="table7" class="table">
+                
+                
                 <?php
-                if ($_GET["7"] === 'on') {
-                    
+                if (isset($_GET["7"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo '<div class="table">' . $n = $l . 'x' . 7 . '=' . $n = $l * 7 . '<br></div>';
+                        echo $n = $l . 'x' . 7 . '=' . $n = $l * 7 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
-                <div id="table8" class="table">
+                
+                
                 <?php
-                if ($_GET["8"] === 'on') {
-                    
+                if (isset($_GET["8"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo '<div class="table">' . $n = $l . 'x' . 8 . '=' . $n = $l * 8 . '<br></div>';
+                        echo $n = $l . 'x' . 8 . '=' . $n = $l * 8 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
-                <div id="table9" class="table">
+               
+                
                 <?php
-                if ($_GET["9"] === 'on') {
-                    
+                if (isset($_GET["9"]) == 'on') {
+                    echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
-                        echo '<div class="table">' . $n = $l . 'x' . 9 . '=' . $n = $l * 9 . '<br></div>';
+                        echo $n = $l . 'x' . 9 . '=' . $n = $l * 9 . '<br>';
                     }
+                    echo '</div>';
                 }
                 ?>
-                </div>
+               
             </div>
 
 
