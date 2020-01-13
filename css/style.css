@@ -34,11 +34,12 @@ aside {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    margin-right: 50px;
     background-color: #ccc;
     width: 150px;
-    top: 50;
-    left: 50;
     font-size: 3em;
+    flex-direction: row;
+    position: relative;
 
 }
 
@@ -48,10 +49,11 @@ aside {
     padding-top: 40px;
 }*/
 #math {
-    flex-direction: column;
+    
     display: flex;
     justify-content: space-between;
     position: absolute;
+    width: 800px;
 }
 
 
