@@ -1,75 +1,94 @@
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 body {
     margin: 0px;
+    background-color: grey;
+    margin:0;
+    padding:0;
+}
+
+
+#div1 
+{
+    float:left ; 
+    width:250px ; 
+    height:100%;
+    margin-left: auto; 
+    margin-right: auto;
+    background: red;
+}
+#div2 
+{ display: grid;
+    width:100% ; 
+    margin-left: auto; 
+    margin-right: auto;     
+    background: green;
+}
+
+
+
+aside {
+    /* Header */
+    display:inline-block;
+    background-color: green;
+    width: 250px;
+}
+
+main {
+    display:inline-block;
+    background: red;
+    padding-bottom:60px;
+    margin-left:260px;
+    margin:0;
+    padding:0;
+}
+
+footer {
+
+    height:50px;
+    line-height:50px;
+    text-align: center;
+    background: #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
 }
 
 #twoBox {
+    /* Accueil */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     text-align: center;
+
 }
+    #twoBox .box {
+        /* Accueil */
+        width: 500px;
+        height: 500px;
+    }
 
 section {
+    /* Révision */
     left: 500px;
-    position: absolute;
-}
-
-aside {
-    float: left;
-    background-color: green;
-    width: 250px;
-    height: 500px;
-
-}
-
-#cahier {
-    position: relative;
-}
-
-.table {
-    /* background-image: url(images.pageCahier.png);*/
-
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  
-    background-color: #ccc;
-    width: 200px;
-    font-size: 3em;
-    flex-direction: column;
-    position: relative;
-    column-width: 100px;
-    
-
-}
-
-.table2 {
-    /* background-image: url(images.pageCahier.png);*/
-
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    background-color: #ccc;
-    width: 200px;
-    font-size: 3em;
-    flex-direction: column;
-    position: relative;
-
+    /* position: absolute; */
 }
 
 
 
-/*.table:nth-child(n+){
-    padding-top: 40px;
-}*/
+label, input
+{
+    cursor:pointer;
+}
+
 #math {
-    
+    /* Colonne dans les révisons */
     justify-content: space-between;
     position: absolute;
     width: 1000px;
@@ -103,14 +122,6 @@ ul {
     text-transform: uppercase;
 }
 
-.box {
-    width: 500px;
-    height: 500px;
-
-}
-
-
-
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -118,16 +129,3 @@ h1 {
 
 
 
-footer {
-    text-align: center;
-    background: #ccc;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0
-}
-
-body {
-    background-color: grey;
-    height: 100vh;
-}

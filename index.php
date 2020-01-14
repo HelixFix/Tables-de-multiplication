@@ -1,36 +1,218 @@
 <?php
-include("header.php");
-?>
 
-<body>
+    include("header.php");
 
-    <main>
-        <aside>
-            <?php
-            include("aside.php");
-            ?>
-        </aside>
-        <section>
-            <div id="twoBox">
-                <div id="boxGauche" class="box">
+    if(isset($_GET["op"])) $op = $_GET["op"]; else $op = ""; // création variable $tableau
+    if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
+    if(isset($_GET["somme"])) $somme = $_GET["somme"]; else $somme = ""; // création variable $tableau
+    if(isset($_GET["aleatoire"])) $aleatoire = $_GET["aleatoire"]; else $aleatoire = ""; // création variable $tableau
+    if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
+    if(isset($_GET["tentatives"])) $tentatives = $_GET["tentatives"]; else $tentatives = ""; // création variable $tableau
+
+    function accueil()
+    {
+        echo"--- accueil ---</br>"; 
+
+        echo"<section>
+            <div id=\"twoBox\">
+                <div id=\"boxGauche\" class=\"box\">
                     <h2>Réviser vos tables de multiplication</h2>
-                    <a href="revision.php"><img src="images/images.jpg" alt="feuille table de multiplication"></a>
+                    <a href=\"index.php?op=revision\"><img src=\"images/images.jpg\" alt=\"feuille table de multiplication\"></a>
                     <p>La page 1 te permet de te familiariser avec les tables,<br> donc regarde, lis à haute voix et répète.
                         <br>Si tu crois que tu peux t'en souvenir, <br>il est temps de tester tes connaissances à la page 2.
                     </p>
                 </div>
 
-                <div id="boxDroite" class="box">
+                <div id=\"boxDroite\" class=\"box\">
                     <h2>Tester vos aptitudes</h2>
-                    <a href="test.php"><img src="images/mathTest.png" alt="math test"></a>
+                    <a href=\"index.php?op=test\"><img src=\"images/mathTest.png\" alt=\"math test\"></a>
                 </div>
             </div>
-        </section>
-    </main>
-</body>
+        </section>";
+    }
 
-<?php
-include("footer.php");
+    function result()
+    {
+        global $aleatoire, $table;
+
+        echo"--- result --- $aleatoire, $table</br>";
+    }
+
+    function revision()
+    {
+        global $table;
+
+        echo"--- revision ---</br>";
+
+        echo"<section>créer des checkbox pour la selection des tables par choix multiples avec <br><br>
+        <form action=\"index.php\" method=\"get\">";
+
+
+                echo"<input type=\"hidden\" name=\"op\" value=\"revision\" >";
+
+                for ( $i = 1; $i <= 9; $i++)
+                {
+                    if ($table && in_array($i, $table)) $checked = "checked"; else $checked = ""; 
+                    echo"<input type=\"checkbox\" id=\"table-de-$i\" name=\"table[]\" value=\"$i\" $checked > <label for=\"table-de-$i\">table $i</label><br>";
+                }
+
+                echo"<button type=\"submit\">Envoyer</button>";
+
+            echo"</form>";
+
+            echo"<div id=\"\">"; // id=\"math\"
+
+                if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
+
+                // var_dump($table);
+
+                for ( $i = 1; $i <= 9; $i++) // Boucle de 1 à 9 (toutes les tables de multiplications)
+                {
+                    if ($table && in_array($i, $table)) // Vérifie si $i existe dans le tableau
+                    {
+                        tabledemultiplication($i); // Appelle la fonction qui genere la table de mutiplication
+                    } 
+                }
+
+                // echo"<a href=\"brouillon.php?table=". $table ."\">Se tester sur la table de $table</a>";
+
+            echo"</div>
+
+        </section>";
+    }
+
+    function test()
+    {
+        global $somme, $table, $aleatoire, $tentatives;
+
+        echo"--- test --- </br>";
+
+        echo"<form action=\"index.php\" method=\"get\">";
+
+            echo"<input type=\"hidden\" name=\"op\" value=\"test\" >";
+            echo"<select name=\"table\" ONCHANGE=\"location = this.options[this.selectedIndex].value;\">";
+
+                if(!$table) echo"<option value=\"\">-- Choisir la table de multiplication --</option>";
+
+                for ( $i = 1; $i <= 9; $i++)
+                {
+                    if($i == $table) $selected = "selected"; else $selected = "";
+                    echo"<option value=\"index.php?op=test&table=$i\" $selected>Table de $i</option>";
+                }
+
+            echo"</select>";
+
+        echo"</form>";
+
+        /* ************************************************************* */
+        /* ************************************************************* */
+        /* ************************************************************* */
+
+        if(!$somme)
+        {
+            echo"--- On affiche la question ---<br>";
+
+            for ( $i = 1; $i <= 9; $i++)
+            {
+                if ($i == $table) 
+                {
+                    question($table, "", 0);
+                }
+            }
+        }
+        else
+        {
+            echo"--- On affiche la reponse ---<br>";
+
+            $result = $aleatoire * $table;
+
+            if($result == $somme) 
+            {
+                echo"Gagné";
+                question($table, "", 0);
+            }
+            else
+            {
+                $tentatives++;
+
+                echo"Perdu ---> Tentative = $tentatives<br>";
+
+                if($tentatives < 3)
+                {
+                    question($table, $aleatoire, $tentatives);
+                }
+                else
+                {
+                    echo"<a href=\"index.php?op=revision&table[]=". $table ."\">Vas réviser la table de $table bonhomme!</a>";
+                }
+
+
+
+            }
+        }
+    }
+
+    function question($table, $aleatoire, $tentatives)
+    {
+        if(!$aleatoire) $aleatoire = rand(0, 9);
+
+        echo"<div>";
+                
+            echo"<form action=\"index.php\" method=\"get\">";
+
+                echo" Combien font : $aleatoire x $table = ";
+
+                echo"<input type=\"hidden\" name=\"op\" value=\"test\" >";
+                echo"<input type=\"hidden\" name=\"aleatoire\" value=\"$aleatoire\">";
+                echo"<input type=\"hidden\" name=\"table\" value=\"$table\">";
+                echo"<input type=\"number\" name=\"somme\" required>";
+                echo"<input type=\"hidden\" name=\"tentatives\" value=\"$tentatives\">";
+
+                echo"<input type=\"submit\" value=\"Envoyer\">";
+                echo"<br><br>";
+
+            echo"</form>";
+
+        echo "</div>";
+    }
+
+    function tabledemultiplication($table)
+    {
+        echo"<h2>Table de $table</h2>";
+        echo"<div>";
+
+            for ( $i = 1; $i <= 10; $i++)
+            {
+                echo"$i * $table = ". $i * $table ."<br>";
+            }
+            
+        echo"</div>";
+    }
+
+    switch ($op)
+    {
+        case"accueil":
+        accueil();
+        break;
+
+        case"result":
+        result();
+        break;
+
+        case"revision":
+        revision();
+        break;
+
+        case"test":
+        test();
+        break;
+
+        default:
+        accueil();
+        break;
+    } 
+
+    include("footer.php");
 ?>
 
 </html>
