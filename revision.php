@@ -29,19 +29,19 @@ include("header.php");
 
                 <input type="checkbox" name="6">
                 <label for="6">Table de 6</label>
-                
+
                 <input type="checkbox" name="7">
                 <label for="7">Table de 7</label>
-                
+
                 <input type="checkbox" name="8">
                 <label for="8">Table de 8</label>
-                              
+
                 <input type="checkbox" name="9">
                 <label for="9">Table de 9</label>
                 <button type="submit">Envoyer</button>
             </form>
             <div id="math">
-                
+
                 <?php
                 if (isset($_GET["1"]) == 'on') {
                     echo '<div class="table">';
@@ -50,10 +50,10 @@ include("header.php");
                     }
                     echo '</div>';
                 }
-               
+
                 ?>
-                
-                
+
+
                 <?php
                 if (isset($_GET["2"]) == 'on') {
                     echo '<div class="table">';
@@ -63,8 +63,8 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-                
-                
+
+
                 <?php
                 if (isset($_GET["3"]) == 'on') {
                     echo '<div class="table">';
@@ -74,8 +74,8 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-                
-                
+
+
                 <?php
                 if (isset($_GET["4"]) == 'on') {
                     echo '<div class="table">';
@@ -85,8 +85,8 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-                
-                
+
+
                 <?php
                 if (isset($_GET["5"]) == 'on') {
                     echo '<div class="table">';
@@ -96,8 +96,8 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-               
-                
+
+
                 <?php
                 if (isset($_GET["6"]) == 'on') {
                     echo '<div class="table">';
@@ -107,8 +107,8 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-                
-                
+
+
                 <?php
                 if (isset($_GET["7"]) == 'on') {
                     echo '<div class="table">';
@@ -118,8 +118,8 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-                
-                
+
+
                 <?php
                 if (isset($_GET["8"]) == 'on') {
                     echo '<div class="table">';
@@ -129,8 +129,8 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-               
-                
+
+
                 <?php
                 if (isset($_GET["9"]) == 'on') {
                     echo '<div class="table">';
@@ -140,7 +140,7 @@ include("header.php");
                     echo '</div>';
                 }
                 ?>
-               
+
             </div>
 
 
