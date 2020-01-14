@@ -44,10 +44,12 @@ include("header.php");
 
                 <?php
                 if (isset($_GET["1"]) == 'on') {
+                    
                     echo '<div class="table">';
                     for ($l = 0; $l < 10; $l++) {
                         echo  $n = $l . ' x ' . 1 . ' = ' . $n = $l * 1 . '<br>';
                     }
+                
                     echo '</div>';
                 }
 
