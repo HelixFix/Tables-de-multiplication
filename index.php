@@ -13,7 +13,7 @@
     {
         //echo"--- accueil ---</br>"; 
 
-        echo"<section>
+        echo"<div>
             <div id=\"twoBox\">
                 <div id=\"boxGauche\" class=\"box\">
                     <h2>Réviser vos tables de multiplication</h2>
@@ -28,7 +28,7 @@
                     <a href=\"index.php?op=test\"><img src=\"images/mathTest.png\" alt=\"math test\"></a>
                 </div>
             </div>
-        </section>";
+        </div>";
     }
 
     function result()
@@ -44,41 +44,44 @@
 
        // echo"--- revision ---</br>";
 
-        echo"<section>créer des checkbox pour la selection des tables par choix multiples avec <br><br>
-        <form action=\"index.php\" method=\"get\">";
+        echo"<div>";
+        
+            echo"créer des checkbox pour la selection des tables par choix multiples avec <br><br>";
 
+            echo"<form action=\"index.php\" method=\"get\">";
 
                 echo"<input type=\"hidden\" name=\"op\" value=\"revision\" >";
 
                 for ( $i = 1; $i <= 9; $i++)
-                {
+                { 
                     if ($table && in_array($i, $table)) $checked = "checked"; else $checked = ""; 
-                    echo"<input type=\"checkbox\" id=\"table-de-$i\" name=\"table[]\" value=\"$i\" $checked > <label for=\"table-de-$i\">table $i</label><br>";
+                    echo"<input type=\"checkbox\" id=\"table-de-$i\" name=\"table[]\" value=\"$i\" $checked > <label for=\"table-de-$i\">table $i</label><br>"; 
                 }
 
                 echo"<button type=\"submit\">Envoyer</button>";
 
             echo"</form>";
 
-            echo"<div id=\"math\">"; // id=\"math\"
+            if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
 
-                if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
+            // var_dump($table);
 
-                // var_dump($table);
+            echo"<div class=\"fixed-size-container\">";
 
                 for ( $i = 1; $i <= 9; $i++) // Boucle de 1 à 9 (toutes les tables de multiplications)
                 {
                     if ($table && in_array($i, $table)) // Vérifie si $i existe dans le tableau
                     {
-                        tabledemultiplication($i); // Appelle la fonction qui genere la table de mutiplication
+                        echo "<div class=\"fixed-size\">";
+                            tabledemultiplication($i); // Appelle la fonction qui genere la table de mutiplication
+                        echo "</div>";
                     } 
+
                 }
+        
+            echo"</div>";
 
-                // echo"<a href=\"brouillon.php?table=". $table ."\">Se tester sur la table de $table</a>";
-
-            echo"</div>
-
-        </section>";
+        echo"</div>";
     }
 
     function test()
@@ -110,7 +113,7 @@
 
         if(!$somme)
         {
-            echo"--- On affiche la question ---<br>";
+            if($table) echo"--- On affiche la question ---<br>";
 
             for ( $i = 1; $i <= 9; $i++)
             {
@@ -178,11 +181,13 @@
 
     function tabledemultiplication($table)
     {
-        echo"<h2>Table de $table</h2>";
-        echo"<div>";
+        echo"<div class=\"tables-de-multiplications\">";
+
+            echo"<h2>Table de $table</h2><br>";
 
             for ( $i = 1; $i <= 10; $i++)
             {
+                if($i < 10) echo"&nbsp; ";
                 echo"$i * $table = ". $i * $table ."<br>";
             }
             

@@ -1,45 +1,38 @@
 * {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0px;
     background-color: grey;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 
-
-
-
-aside {
-    /* Header */
-    
-    background-color: green;
-    width: 24%;
-    border: 1px solid #fcddd1;
-    padding: 5px;
-    float: left;
-    height: 500px;
+nav{
+    background: green;
+    padding:20px;
+    margin-left:10px;
 }
+
 
 main {
-   
-   
-    padding-bottom:60px;
-    margin-left:260px;
-    margin:0;
-    padding:0;
+
+
+    padding-bottom: 60px;
+    margin-left: 260px;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
 footer {
 
-    height:50px;
-    line-height:50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     background: #ccc;
     position: fixed;
@@ -57,31 +50,26 @@ footer {
     text-align: center;
 
 }
-    #twoBox .box {
-        /* Accueil */
-        width: 500px;
-        height: 500px;
-    }
 
-section {
-    /* Révision */
-    background-color: #fff4dd;
-  width: 74%;
-    /* position: absolute; */
+#twoBox .box {
+    /* Accueil */
+    width: 500px;
+    height: 500px;
 }
 
 
 
-label, input
-{
-    cursor:pointer;
+
+label,
+input .checkbox {
+    cursor: pointer;
 }
 
 #math {
     /* Colonne dans les révisons */
-    justify-content: space-between;
-    position: absolute;
-    width: 1000px;
+    
+    position: relative;
+
     column-count: 3;
     
 }
@@ -119,31 +107,74 @@ h1 {
 
 
 
-<style>
 
-	*{ box-sizing:border-box; padding:0; margin:0; }
 
-	section#container
-	{
-		position:relative;
-	}
+section#container {
+    position: relative;
 
-	section#container aside
-	{
-		position:absolute;
-		background:green;
-		width:20%;
-		top:0;
-		left:0;
-		
-	}
 
-	section#container #content
-	{
-		position:absolute;
-		
-		width:80%;
-		top:0;
-		left:40%;
-	}
+}
 
+    section#container aside {
+        position: absolute;
+        width: 20%;
+        top: 0;
+        left: 0;
+
+    }
+
+    section#container #content {
+        position: absolute;
+        width: 80%;
+        top: 0;
+        left: 20%;
+    }
+
+    section#container #content-interieur {
+
+        background-color: #fff4dd;
+        margin:0 10px 70px 50px;
+        padding:20px;
+    }
+
+    header{
+        margin:0;
+        background:black; 
+        color:white;
+        height:50px;
+        line-height: 50px;
+        margin-bottom:10px;
+    }
+
+    h1{
+        padding:0;
+        margin:0;
+    }
+
+    .fixed-size-container {
+        max-width: 1400px;
+        margin: 50px auto 50px auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+        
+        .fixed-size {
+            width: 200px;
+
+            color: #FFF;
+            text-align: left;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 20px;
+            padding:20px;
+        }
+
+        .tables-de-multiplications
+        {
+            background-color:#990B47;
+            padding:10px;
+        }
+    

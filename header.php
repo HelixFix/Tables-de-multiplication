@@ -16,28 +16,28 @@
 
         <header>
 
-            <h1>Les tables de multiplications</h1>
+            <div><h1>Les tables de multiplications</h1></div>
 
         </header>
 
         <section id="container"> <!-- mets moi dans le header  -->
 
-	<aside><!-- mets moi dans header.php  -->
-	
-    <nav>
-                <ul>
+            <aside><!-- mets moi dans header.php  -->
+            
+                <nav>
 
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="index.php?op=revision">Révision</a></li>
-                    <li><a href="index.php?op=test">Test</a></li>
+                    <ul>
 
-                </ul>
-            </nav>
-		
-	</aside> <!-- mets moi dans le header.php  -->
-	<div id="content"> <!-- mets moi dans header.php  -->
-	
-	
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="index.php?op=revision">Révision</a></li>
+                        <li><a href="index.php?op=test">Test</a></li>
 
+                    </ul>
+                    
+                </nav>
+                
+            </aside> <!-- mets moi dans le header.php  -->
 
-        <main>
+            <div id="content"> <!-- mets moi dans header.php  -->
+
+                <div id="content-interieur"> <!-- mets moi dans header.php  -->
