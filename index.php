@@ -11,7 +11,7 @@
 
     function accueil()
     {
-        echo"--- accueil ---</br>"; 
+        //echo"--- accueil ---</br>"; 
 
         echo"<section>
             <div id=\"twoBox\">
@@ -42,7 +42,7 @@
     {
         global $table;
 
-        echo"--- revision ---</br>";
+       // echo"--- revision ---</br>";
 
         echo"<section>créer des checkbox pour la selection des tables par choix multiples avec <br><br>
         <form action=\"index.php\" method=\"get\">";
@@ -60,7 +60,7 @@
 
             echo"</form>";
 
-            echo"<div id=\"\">"; // id=\"math\"
+            echo"<div id=\"math\">"; // id=\"math\"
 
                 if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
 
@@ -85,7 +85,7 @@
     {
         global $somme, $table, $aleatoire, $tentatives;
 
-        echo"--- test --- </br>";
+        //echo"--- test --- </br>";
 
         echo"<form action=\"index.php\" method=\"get\">";
 

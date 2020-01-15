@@ -14,25 +14,17 @@
 
     <body>
 
-
-
-<div id="div1">div 1</div>
-<div id="div2">div 2<br>3<br>ccc</div>
-
-
-
-
-
-
         <header>
 
             <h1>Les tables de multiplications</h1>
 
         </header>
 
-        <aside>
+        <section id="container"> <!-- mets moi dans le header  -->
 
-            <nav>
+	<aside><!-- mets moi dans header.php  -->
+	
+    <nav>
                 <ul>
 
                     <li><a href="index.php">Accueil</a></li>
@@ -41,7 +33,11 @@
 
                 </ul>
             </nav>
+		
+	</aside> <!-- mets moi dans le header.php  -->
+	<div id="content"> <!-- mets moi dans header.php  -->
+	
+	
 
-        </aside>
 
         <main>

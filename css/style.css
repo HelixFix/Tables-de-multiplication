@@ -12,39 +12,28 @@ body {
 }
 
 
-#div1 
-{
-    float:left ; 
-    width:250px ; 
-    height:100%;
-    margin-left: auto; 
-    margin-right: auto;
-    background: red;
-}
-#div2 
-{ display: grid;
-    width:100% ; 
-    margin-left: auto; 
-    margin-right: auto;     
-    background: green;
-}
 
 
 
 aside {
     /* Header */
-    display:inline-block;
+    
     background-color: green;
-    width: 250px;
+    width: 24%;
+    border: 1px solid #fcddd1;
+    padding: 5px;
+    float: left;
+    height: 500px;
 }
 
 main {
-    display:inline-block;
-    background: red;
+   
+   
     padding-bottom:60px;
     margin-left:260px;
     margin:0;
     padding:0;
+    width: 100%;
 }
 
 footer {
@@ -76,7 +65,8 @@ footer {
 
 section {
     /* Révision */
-    left: 500px;
+    background-color: #fff4dd;
+  width: 74%;
     /* position: absolute; */
 }
 
@@ -128,4 +118,32 @@ h1 {
 }
 
 
+
+<style>
+
+	*{ box-sizing:border-box; padding:0; margin:0; }
+
+	section#container
+	{
+		position:relative;
+	}
+
+	section#container aside
+	{
+		position:absolute;
+		background:green;
+		width:20%;
+		top:0;
+		left:0;
+		
+	}
+
+	section#container #content
+	{
+		position:absolute;
+		
+		width:80%;
+		top:0;
+		left:40%;
+	}
 
