@@ -126,6 +126,7 @@
         {
 
             if ($aleatoire >= 0 AND $aleatoire <= 10) // petite sécurité
+            { 
             echo"--- On affiche la reponse ---<br>";
 
             $result = $aleatoire * $table;
@@ -155,6 +156,7 @@
             }
         }
     }
+}
 
     function question($table, $aleatoire, $tentatives)
     {
