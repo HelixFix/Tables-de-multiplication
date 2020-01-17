@@ -4,10 +4,9 @@
 
     if(isset($_GET["op"])) $op = $_GET["op"]; else $op = ""; // création variable $tableau
     if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
-    if(isset($_GET["somme"])) $somme = $_GET["somme"]; else $somme = ""; // création variable $tableau
-    if(isset($_GET["aleatoire"])) $aleatoire = $_GET["aleatoire"]; else $aleatoire = ""; // création variable $tableau
-    if(isset($_GET["table"])) $table = $_GET["table"]; else $table = ""; // création variable $tableau
-    if(isset($_GET["tentatives"])) $tentatives = $_GET["tentatives"]; else $tentatives = ""; // création variable $tableau
+    if(isset($_GET["somme"])) $somme = (int) $_GET["somme"]; else $somme = ""; // création variable $tableau
+    if(isset($_GET["aleatoire"])) $aleatoire = (int) $_GET["aleatoire"]; else $aleatoire = ""; // création variable $tableau
+    if(isset($_GET["tentatives"])) $tentatives = (int) $_GET["tentatives"]; else $tentatives = ""; // création variable $tableau
 
     function accueil()
     {
@@ -52,7 +51,7 @@
 
                 echo"<input type=\"hidden\" name=\"op\" value=\"revision\" >";
 
-                for ( $i = 1; $i <= 9; $i++)
+                for ( $i = 1; $i <= 10; $i++)
                 { 
                     if ($table && in_array($i, $table)) $checked = "checked"; else $checked = ""; 
                     echo"<input type=\"checkbox\" id=\"table-de-$i\" name=\"table[]\" value=\"$i\" $checked > <label for=\"table-de-$i\">table $i</label><br>"; 
@@ -68,7 +67,7 @@
 
             echo"<div class=\"fixed-size-container\">";
 
-                for ( $i = 1; $i <= 9; $i++) // Boucle de 1 à 9 (toutes les tables de multiplications)
+                for ( $i = 1; $i <= 10; $i++) // Boucle de 1 à 9 (toutes les tables de multiplications)
                 {
                     if ($table && in_array($i, $table)) // Vérifie si $i existe dans le tableau
                     {
@@ -97,7 +96,7 @@
 
                 if(!$table) echo"<option value=\"\">-- Choisir la table de multiplication --</option>";
 
-                for ( $i = 1; $i <= 9; $i++)
+                for ( $i = 1; $i <= 10; $i++)
                 {
                     if($i == $table) $selected = "selected"; else $selected = "";
                     echo"<option value=\"index.php?op=test&table=$i\" $selected>Table de $i</option>";
@@ -115,7 +114,7 @@
         {
             if($table) echo"--- On affiche la question ---<br>";
 
-            for ( $i = 1; $i <= 9; $i++)
+            for ( $i = 0; $i <= 11; $i++)
             {
                 if ($i == $table) 
                 {
@@ -125,6 +124,8 @@
         }
         else
         {
+
+            if ($aleatoire >= 0 AND $aleatoire <= 10) // petite sécurité
             echo"--- On affiche la reponse ---<br>";
 
             $result = $aleatoire * $table;
@@ -185,7 +186,7 @@
 
             echo"<h2>Table de $table</h2><br>";
 
-            for ( $i = 1; $i <= 10; $i++)
+            for ( $i = 0; $i <= 10; $i++)
             {
                 if($i < 10) echo"&nbsp; ";
                 echo"$i * $table = ". $i * $table ."<br>";
